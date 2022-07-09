@@ -1,0 +1,110 @@
+body {
+  padding-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+footer {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+}
+
+ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+li {
+  list-style: none;
+  width: 150px;
+}
+.container {
+  width: 500px;
+}
+.weather-app {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 600px;
+}
+
+.enter-city {
+  letter-spacing: 1px;
+  background-color: rgb(243, 243, 243);
+  color: black;
+  border-width: 1px;
+  border-color: rgb(179, 179, 179);
+  border-radius: 6px;
+  border-style: double;
+}
+
+.search-button {
+  margin-bottom: 30px;
+  background-color: rgb(166, 200, 250);
+  color: #fff;
+  border-width: 1px;
+  border-color: rgb(96, 156, 245);
+  border-radius: 6px;
+  border-style: double;
+}
+
+.current-button {
+  margin-bottom: 30px;
+  background-color: rgb(191, 166, 250);
+  color: #fff;
+  border-width: 1px;
+  border-color: rgb(151, 111, 245);
+  border-radius: 6px;
+  border-style: double;
+}
+
+.days {
+  text-align: center;
+}
+
+.small-icons {
+  text-align: center;
+}
+
+.high-temp {
+  font-weight: 700;
+  text-align: center;
+}
+
+.low-temp {
+  text-align: center;
+}
+
+.current-time {
+  font-size: 20px;
+}
+
+.current-temp {
+  font-size: 55px;
+  font-weight: 100;
+}
+
+.current-city {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.weather-icon {
+  width: 100px;
+  margin-top: 0px;
+}
+
+.units {
+  position: relative;
+  top: -25px;
+  left: -10px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.details {
+  margin-top: 10px;
+}
