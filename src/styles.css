@@ -55,10 +55,10 @@ li {
   margin-bottom: 30px;
   letter-spacing: 1px;
   height: 35px;
-  background-color: rgb(166, 200, 250);
+  background-color: rgb(191, 166, 250);
   color: #fff;
   border-width: 1px;
-  border-color: rgb(166, 200, 250);
+  border-color: rgb(191, 166, 250);
   border-radius: 6px;
   border-style: double;
 }
@@ -67,12 +67,13 @@ li {
   margin-bottom: 30px;
   letter-spacing: 1px;
   height: 35px;
-  background-color: rgb(191, 166, 250);
+  background-color: rgb(166, 200, 250);
   color: #fff;
   border-width: 1px;
-  border-color: rgb(191, 166, 250);
+  border-color: rgb(166, 200, 250);
   border-radius: 6px;
   border-style: double;
+  font-size: 18px;
 }
 
 .days {

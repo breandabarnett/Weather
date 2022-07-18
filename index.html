@@ -25,9 +25,11 @@
         <input
         type="text"
         placeholder=" Type in a city..."
-        class="col-5 enter-city search"
+        class="col-7 enter-city search"
+        id="city-search-input"
+        autocomplete="off"
         autofocus
-        id="city-search-input"/>
+        />
         <input
         type="submit"
         value="search"
@@ -35,10 +37,11 @@
         />
         <input
         type="submit"
-        value="current"
-        class="col-3 current-button shadow-sm"
+        value="📍"
+        class="col-1 current-button shadow-sm"
         id="current-location-button"
-        />    
+        /> 
+      </form>   
         <div class="row">
           <div class="col-8">
             <h1 class="current-city" id="city"></h1>
@@ -106,7 +109,6 @@
             <div class="col-3">17°C</div>            
           </div>
         </div>
-      </form>
     </div>
     <br />
     <footer>
