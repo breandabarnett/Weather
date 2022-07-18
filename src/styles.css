@@ -23,6 +23,10 @@ li {
   width: 600px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .weather-app {
   border: 1px solid none;
   border-radius: 10px;
@@ -125,10 +129,15 @@ li {
 .units {
   position: relative;
   top: -25px;
-  left: -10px;
+  left: -3px;
   font-size: 18px;
   text-align: center;
   margin-left: 8px;
+}
+
+.units .active {
+  color: #000000;
+  cursor: default;
 }
 
 .details {
