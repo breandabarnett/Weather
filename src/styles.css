@@ -38,10 +38,17 @@ a {
 }
 
 .logo {
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: italic;
   letter-spacing: 1px;
   margin: 10px 10px 40px 0;
+  text-align: center;
+  color: rgb(191, 166, 250);
+}
+
+.logo-image {
+  width: 65px;
 }
 
 .enter-city {
