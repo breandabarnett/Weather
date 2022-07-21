@@ -24,6 +24,15 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 
@@ -32,7 +41,7 @@ dateElement.innerHTML = formatDate(currentTime);
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "fd723d0878943be9e88ff512b0c0f747";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&unit=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(showForecast);
 }
@@ -109,21 +118,28 @@ function showCelciusTemperature(event) {
 }
 
 function showForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
   let weekdays = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
 
   let forecastHTML = "";
-  weekdays.forEach(function (weekday) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       ` 
           <div class="row">
-            <div class="col 3 days">${weekday}</div>
-            <div class="col 3 small-icons"><img src="images/thundercloud.png" width="30" /></div>
-            <div class="col 3 high-temp">17</div>
-            <div class="col 3 low-temp">14</div>
+            <div class="col 3 days">${formatDay(forecastDay.dt)}</div>
+            <div class="col 3 small-icons"><img src="http://openweathermap.org/img/wn/${
+              forecastDay.weather[0].icon
+            }@2x.png" alt="" width="45" /></div>
+            <div class="col 3 high-temp">${Math.round(
+              forecastDay.temp.max
+            )}° </div>
+            <div class="col 3 low-temp">${Math.round(
+              forecastDay.temp.min
+            )}° </div>
           </div>
           <hr />
       `;
