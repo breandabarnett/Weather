@@ -99,7 +99,32 @@ function showCelciusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let weekdays = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
+
+  let forecastHTML = "";
+  weekdays.forEach(function (weekday) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+          <div class="row">
+            <div class="col 3 days">${weekday}</div>
+            <div class="col 3 small-icons"><img src="images/thundercloud.png" width="30" /></div>
+            <div class="col 3 high-temp">17</div>
+            <div class="col 3 low-temp">14</div>
+          </div>
+          <hr />
+      `;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let celciusTemperature = null;
+
+showForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
