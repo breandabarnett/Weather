@@ -65,23 +65,34 @@
           <div class="current-description" id="weather-description"></div>
         </div>
       </div>
-      </div>
-        <div class="description-container">
-          <div class="row">
-            <div class ="col-4 details">
-              <ul>
-                <li id="weather-description">              
-                </li>
-                <li>
-                  Humidity: <span id="humidity"></span>%
-                </li>
-                <li>
-                  Wind Speed: <span id="wind"></span> km/h
-                </li>
-              </ul>
-            </div>
-          </div>    
+    <div class="details-container">
+      <div class="row">
+        <div class=" col-3 humidity">
+           Humidity
+           <p>
+             <span id="humidity"></span>%
+           </p>   
         </div>
+        <div class="col-3 wind">
+          Wind Speed
+          <p>
+            <span id="wind"></span> km/h
+          </p>
+        </div>
+        <div class=" col-3 pressure">
+          Pressure
+            <p>
+              <span id="pressure"></span> hPa 
+            </p>      
+        </div>
+        <div class=" col-3 feelsLike">
+          Feels Like
+            <p>
+              <span id="feels-like"></span>°C 
+            </p>  
+        </div>
+      </div>
+    </div>
         <div class="week-forecast-container">
           🗓 7-Day Forecast
           <hr />
