@@ -6,10 +6,9 @@ body {
 }
 
 footer {
-  font-size: small;
-  font-style: italic;
+  font-size: 18px;
   text-align: center;
-  margin: 10px 0 70px 0;
+  margin: 40px auto;
 }
 
 ul {
@@ -24,6 +23,11 @@ li {
 
 a {
   text-decoration: none;
+  color: rgba(97, 39, 231, 0.8);
+}
+
+a:hover {
+  color: #fff;
 }
 
 .container {
@@ -75,7 +79,7 @@ a {
 .logo {
   font-size: 40px;
   font-weight: 400;
-  margin: 40px;
+  margin: 20px auto 40px auto;
   padding: 10px;
   text-align: center;
   color: #fff;
