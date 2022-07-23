@@ -110,7 +110,6 @@ a {
 
 .current-button {
   text-align: center;
-  letter-spacing: 1px;
   height: 45px;
   width: 40px;
   background-color: rgb(166, 200, 250);
@@ -119,7 +118,6 @@ a {
   border-color: rgb(166, 200, 250);
   border-radius: 6px;
   border-style: double;
-  font-size: 18px;
 }
 
 .days {
