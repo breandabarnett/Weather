@@ -18,11 +18,11 @@
   <body>
     <div class="container">
       <div class="current-weather-container">    
-      <form id="search-form">
+        <form id="search-form" class="search-form">
         <input
         type="text"
         placeholder=" Type in a city..."
-        class="col-7 enter-city search"
+        class="col-8 enter-city search"
         id="city-search-input"
         autocomplete="off"
         autofocus
@@ -38,41 +38,50 @@
         class="col-1 current-button shadow-sm"
         id="current-location-button"
         /> 
-      </form>   
-        <div class="row">
-          <div class="col-8">
-            <h1 class="current-city" id="city"></h1>
-            <ul class="current-time">
-                <li id="date"></li>                
-            </ul>
-          </div>
-          <div class="col-4">
-            <img
+        </form>
+      <div class="row">
+          <div class="col-5 main-icon">
+          <img
             src="" 
             id="icon"
             alt=""
-            class="weather-icon" />
-          </div>                         
+            class="weather-icon"
+          />
         </div>
-        <div class="row">
-          <div class="col-8">
+          <div class="col-7 main-temperature">
             <span class="current-temp" id="temperature"> </span>
             <span class="units"><a href ="#" id="celcius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
           </div>
-          <div class ="col-4 details">
-            <ul>
-              <li id="weather-description">              
-              </li>
-              <li>
-                Humidity: <span id="humidity"></span>%
-              </li>
-              <li>
-                Wind Speed: <span id="wind"></span> km/h
-              </li>
-            </ul>
-          </div>
-        </div>      
       </div>
+        <div class="row">
+          <div class="main-city">
+            <h1 class="current-city" id="city"></h1>
+        </div>
+      </div>
+        <div class="row">
+          <div class="current-time" id="date"></div>
+        </div>
+        <div class="row">
+          <div class="current-description" id="weather-description"></div>
+        </div>
+      </div>
+      </div>
+        <div class="description-container">
+          <div class="row">
+            <div class ="col-4 details">
+              <ul>
+                <li id="weather-description">              
+                </li>
+                <li>
+                  Humidity: <span id="humidity"></span>%
+                </li>
+                <li>
+                  Wind Speed: <span id="wind"></span> km/h
+                </li>
+              </ul>
+            </div>
+          </div>    
+        </div>
         <div class="week-forecast-container">
           🗓 7-Day Forecast
           <hr />
