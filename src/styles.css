@@ -99,7 +99,7 @@ a {
 .search-button {
   letter-spacing: 1px;
   height: 45px;
-  width: 110px;
+  width: 105px;
   background-color: rgb(153, 116, 240);
   color: #fff;
   border-width: 1px;
@@ -110,7 +110,8 @@ a {
 
 .current-button {
   height: 45px;
-  width: 40px;
+  width: 45px;
+  text-align: center;
   background-color: rgb(166, 200, 250);
   color: #fff;
   border-width: 1px;
