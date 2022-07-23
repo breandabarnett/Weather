@@ -31,13 +31,13 @@ a {
 
 .search-form {
   text-align: center;
-  margin: 10px auto 70px auto;
+  margin: 40px auto 70px auto;
 }
 
 .current-weather-container {
   padding: 10px;
   max-width: 500px;
-  margin: 30px auto 70px auto;
+  margin: 5px auto 70px auto;
 }
 
 .details-container {
@@ -73,22 +73,23 @@ a {
 
 .logo {
   font-size: 40px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  margin: 40px 40px 15px 40px;
+  font-weight: 100;
+  font-family: monospace;
+  letter-spacing: -1.5px;
+  margin: 40px;
   padding: 10px;
   text-align: center;
   color: #fff;
 }
 
 .logo-image {
-  width: 40px;
-  margin-top: 20px;
+  width: 45px;
+  margin: 18px 5px 0 0;
 }
 
 .enter-city {
   letter-spacing: 1px;
-  height: 35px;
+  height: 45px;
   background-color: rgb(244, 242, 250);
   color: rgb(39, 39, 39);
   border-width: 1px;
@@ -99,8 +100,8 @@ a {
 
 .search-button {
   letter-spacing: 1px;
-  height: 35px;
-  width: 100px;
+  height: 45px;
+  width: 110px;
   background-color: rgb(153, 116, 240);
   color: #fff;
   border-width: 1px;
@@ -112,8 +113,8 @@ a {
 .current-button {
   text-align: center;
   letter-spacing: 1px;
-  height: 35px;
-  width: 50px;
+  height: 45px;
+  width: 40px;
   background-color: rgb(166, 200, 250);
   color: #fff;
   border-width: 1px;
