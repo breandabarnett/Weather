@@ -73,9 +73,7 @@ a {
 
 .logo {
   font-size: 40px;
-  font-weight: 100;
-  font-family: monospace;
-  letter-spacing: -1.5px;
+  font-weight: 400;
   margin: 40px;
   padding: 10px;
   text-align: center;
