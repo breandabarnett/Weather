@@ -8,7 +8,8 @@ body {
 footer {
   font-size: 18px;
   text-align: center;
-  margin: 40px auto;
+  margin: 10px auto;
+  color: rgba(97, 39, 231, 0.8);
 }
 
 ul {
@@ -83,15 +84,15 @@ a:hover {
   font-weight: 500;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: -2.5px;
-  margin: 20px auto 40px auto;
-  padding: 10px;
+  margin: 100px auto 10px auto;
+  padding: 5px;
   text-align: center;
   color: #fff;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .logo-image {
-  width: 45px;
+  width: 40px;
   margin: 18px 5px 0 0;
 }
 
@@ -156,6 +157,8 @@ a:hover {
 .current-temp {
   font-size: 90px;
   font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .current-city {
@@ -163,18 +166,24 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .current-time {
   font-size: 35px;
   letter-spacing: 1px;
   text-align: center;
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .current-description {
   font-size: 25px;
   letter-spacing: 1px;
   text-align: center;
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .main-temperature {
@@ -205,6 +214,7 @@ a:hover {
 }
 
 .units .active {
-  color: rgb(53, 56, 61);
   cursor: default;
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
