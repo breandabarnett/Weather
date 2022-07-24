@@ -39,7 +39,7 @@ a:hover {
 
 .search-form {
   text-align: center;
-  margin: 40px auto 70px auto;
+  margin: 40px auto;
   width: 560px;
 }
 
@@ -188,16 +188,15 @@ a:hover {
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
-.current-time {
-  font-size: 40px;
+.current-description {
+  font-size: 30px;
   letter-spacing: 1px;
-  text-align: center;
   color: #fff;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
-.current-description {
-  font-size: 25px;
+.current-time {
+  font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
   color: #fff;
@@ -205,12 +204,7 @@ a:hover {
 }
 
 .main-temperature {
-  text-align: left;
-}
-
-.main-icon {
-  text-align: right;
-  padding: 0;
+  text-align: center;
 }
 
 .main-city {
@@ -218,8 +212,12 @@ a:hover {
 }
 
 .weather-icon {
-  width: 150px;
+  width: 70px;
   margin-top: 0px;
+}
+
+.icon-description {
+  text-align: center;
 }
 
 .units {
@@ -229,6 +227,7 @@ a:hover {
   font-size: 25px;
   text-align: center;
   margin-left: 8px;
+  color: #fff;
 }
 
 .units .active {

@@ -32,7 +32,6 @@
             class="col-8 enter-city search"
             id="city-search-input"
             autocomplete="off"
-            
           />
           <input
             type="submit"
@@ -41,15 +40,10 @@
           />
         </form>
         <div class="row">
-            <div class="col-5 main-icon">
-            <img
-              src="" 
-              id="icon"
-              alt=""
-              class="weather-icon"
-            />
-          </div>
-            <div class="col-7 main-temperature">
+          
+        </div>
+        <div class="row">
+            <div class="main-temperature">
               <span class="current-temp" id="temperature"> </span>
               <span class="units"><a href ="#" id="celcius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
             </div>
@@ -60,10 +54,20 @@
         </div>
         </div>
           <div class="row">
-           <div class="current-time" id="date"></div>
+            <div class="icon-description">
+            <span>
+            <img
+              src="" 
+              id="icon"
+              alt=""
+              class="weather-icon"
+            />
+            </span>
+            <span class="current-description" id="weather-description"></span>
+           </div> 
           </div>
           <div class="row">
-            <div class="current-description" id="weather-description"></div>
+            <div class="current-time" id="date"></div>
           </div>
       </div>
 
