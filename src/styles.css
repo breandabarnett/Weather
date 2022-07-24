@@ -39,7 +39,7 @@ a:hover {
 .search-form {
   text-align: center;
   margin: 40px auto 70px auto;
-  width: 100%;
+  width: 560px;
 }
 
 .current-weather-container {
@@ -50,7 +50,7 @@ a:hover {
 
 .details-container {
   padding: 5px;
-  width: 600px;
+  width: 560px;
   margin: 30px auto 10px auto;
 }
 
@@ -58,7 +58,7 @@ a:hover {
   border: 1px solid none;
   border-radius: 10px;
   padding: 25px;
-  width: 600px;
+  width: 560px;
   margin: 10px auto;
   background-color: rgba(250, 250, 250, 0.4);
   box-shadow: 5px 5px 5px rgba(165, 130, 248, 0.4);
