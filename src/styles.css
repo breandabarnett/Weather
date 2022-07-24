@@ -32,23 +32,35 @@ a:hover {
 
 .container {
   width: 600px;
+  padding: 0;
 }
 
 .search-form {
   text-align: center;
   margin: 40px auto 70px auto;
+  width: 100%;
 }
 
 .current-weather-container {
   padding: 10px;
-  max-width: 500px;
+  width: 600px;
   margin: 5px auto 70px auto;
 }
 
 .details-container {
   padding: 5px;
-  max-width: 500px;
+  width: 500px;
   margin: 30px auto 10px auto;
+}
+
+.week-forecast-container {
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 25px;
+  width: 500px;
+  margin: 10px auto;
+  background-color: rgba(250, 250, 250, 0.4);
+  box-shadow: 5px 5px 5px rgba(165, 130, 248, 0.4);
 }
 
 .humidity,
@@ -66,23 +78,16 @@ a:hover {
   box-shadow: 5px 5px 5px rgba(165, 130, 248, 0.4);
 }
 
-.week-forecast-container {
-  border: 1px solid none;
-  border-radius: 10px;
-  padding: 25px;
-  max-width: 500px;
-  margin: 10px auto;
-  background-color: rgba(250, 250, 250, 0.4);
-  box-shadow: 5px 5px 5px rgba(165, 130, 248, 0.4);
-}
-
 .logo {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: -2.5px;
   margin: 20px auto 40px auto;
   padding: 10px;
   text-align: center;
   color: #fff;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .logo-image {
@@ -104,7 +109,7 @@ a:hover {
 .search-button {
   letter-spacing: 1px;
   height: 45px;
-  width: 100px;
+  width: 80px;
   background-color: rgb(153, 116, 240);
   color: #fff;
   border-width: 1px;
@@ -115,7 +120,6 @@ a:hover {
 
 .current-button {
   height: 45px;
-  width: 50px;
   text-align: center;
   background-color: rgb(166, 200, 250);
   color: #fff;
@@ -125,13 +129,20 @@ a:hover {
   border-style: double;
 }
 
-.days,
+.days {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.6);
+}
+
 .small-icons {
   text-align: center;
 }
 
 .week-temps {
   text-align: center;
+  text-shadow: 1px 2px 3px rgba(161, 161, 161, 0.6);
 }
 
 .high-temp {
@@ -139,7 +150,7 @@ a:hover {
 }
 
 .low-temp {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(53, 56, 61, 0.6);
 }
 
 .current-temp {
