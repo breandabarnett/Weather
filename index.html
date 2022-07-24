@@ -11,8 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather</title>
     <link rel="stylesheet" href="src/styles.css" />
@@ -72,35 +70,49 @@
     <div class="details-container">
       <div class="row">
         <div class=" col-3 humidity">
-           Humidity
-           <p>
-             <span id="humidity"></span>%
-           </p>   
+          <p class="details-name">
+            Humidity
+          </p>
+           <img src="images/humidity.png" width="35" alt="humidity icon"
+              />
+          <p class="details-info">
+            <span id="humidity"></span>%
+          </p>   
         </div>
         <div class="col-3 wind">
-          Wind Speed
-          <p>
+          <p class="details-name">
+            Wind
+          </p>
+          <img src="images/wind.png" width="35" alt="wind icon"
+            />
+          <p class="details-info">
             <span id="wind"></span> km/h
           </p>
         </div>
         <div class=" col-3 pressure">
-          Pressure
-            <p>
-              <span id="pressure"></span> hPa 
-            </p>      
+          <p class="details-name">
+            Pressure
+          </p>
+          <img src="images/barometer.png" width="35" alt="pressure barometer icon"
+            />
+          <p class="details-info">
+            <span id="pressure"></span> hPa 
+          </p>      
         </div>
         <div class=" col-3 feelsLike">
-          Feels Like
-            <p>
-              <span id="feels-like"></span>°C 
-            </p>  
+          <p class="details-name">
+            Feel Like
+          </p>
+          <img src="images/t-shirt.png" width="35" alt="feels like shirt icon"
+            />
+          <p class="details-info">
+            <span id="feels-like"></span>°C 
+          </p>  
         </div>
       </div>
     </div>
         <div class="week-forecast-container">
-          <i class="fi fi-ss-calendar"></i> 5-Day Forecast
-          <hr />
-        <div id="forecast"></div>
+          <div id="forecast"></div>
         </div>
     <div class="logo">
       <a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons" target="_blank"><img src="images/rainbow.png" class="logo-image"/></a>pastel weather
