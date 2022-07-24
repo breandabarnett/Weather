@@ -19,112 +19,111 @@
     <div class="container">
       <div class="current-weather-container">    
         <form id="search-form" class="search-form">
-        <button
-        type="button"
-        id="current-location-button"
-        class="col-1 current-button shadow-sm">
-        <i class="fi fi-bs-marker"></i>
-        </button>  
-        <input
-        type="text"
-        placeholder=" Enter a city name..."
-        class="col-8 enter-city search"
-        id="city-search-input"
-        autocomplete="off"
-        autofocus
-        />
-        <input
-        type="submit"
-        value="search"
-        class="col-3 search-button shadow-sm"
-        />
-        
-        </form>
-      <div class="row">
-          <div class="col-5 main-icon">
-          <img
-            src="" 
-            id="icon"
-            alt=""
-            class="weather-icon"
+          <button
+            type="button"
+            id="current-location-button"
+            class="col-1 current-button shadow-sm">
+            <i class="fi fi-bs-marker"></i>
+          </button>  
+          <input
+            type="text"
+            placeholder=" Enter a city name..."
+            class="col-8 enter-city search"
+            id="city-search-input"
+            autocomplete="off"
+            
           />
-        </div>
-          <div class="col-7 main-temperature">
-            <span class="current-temp" id="temperature"> </span>
-            <span class="units"><a href ="#" id="celcius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+          <input
+            type="submit"
+            value="search"
+            class="col-3 search-button shadow-sm"
+          />
+        </form>
+        <div class="row">
+            <div class="col-5 main-icon">
+            <img
+              src="" 
+              id="icon"
+              alt=""
+              class="weather-icon"
+            />
           </div>
-      </div>
+            <div class="col-7 main-temperature">
+              <span class="current-temp" id="temperature"> </span>
+              <span class="units"><a href ="#" id="celcius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+            </div>
+        </div>
         <div class="row">
           <div class="main-city">
             <h1 class="current-city" id="city"></h1>
         </div>
-      </div>
-        <div class="row">
-          <div class="current-time" id="date"></div>
         </div>
-        <div class="row">
-          <div class="current-description" id="weather-description"></div>
-        </div>
+          <div class="row">
+           <div class="current-time" id="date"></div>
+          </div>
+          <div class="row">
+            <div class="current-description" id="weather-description"></div>
+          </div>
       </div>
 
-    <div class="details-container">
-      <div class="row">
-        <div class=" col-3 humidity">
-          <p class="details-name">
-            Humidity
-          </p>
-           <img src="images/humidity.png" width="35" alt="humidity icon"
-              />
-          <p class="details-info">
-            <span id="humidity"></span>%
-          </p>   
-        </div>
-        <div class="col-3 wind">
-          <p class="details-name">
-            Wind
-          </p>
-          <img src="images/wind.png" width="35" alt="wind icon"
-            />
-          <p class="details-info">
-            <span id="wind"></span> km/h
-          </p>
-        </div>
-        <div class=" col-3 pressure">
-          <p class="details-name">
-            Pressure
-          </p>
-          <img src="images/barometer.png" width="35" alt="pressure barometer icon"
-            />
-          <p class="details-info">
-            <span id="pressure"></span> hPa 
-          </p>      
-        </div>
-        <div class=" col-3 feelsLike">
-          <p class="details-name">
-            Feel Like
-          </p>
-          <img src="images/t-shirt.png" width="35" alt="feels like shirt icon"
-            />
-          <p class="details-info">
-            <span id="feels-like"></span>°C 
-          </p>  
+      <div class="details-container">
+        <div class="row">
+          <div class=" col-3 humidity">
+           <p class="details-name">
+             Humidity
+            </p>
+            <a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons" target="_blank"><img src="images/humidity.png" width="35" alt="humidity icon" />
+            </a>
+            <p class="details-info">
+             <span id="humidity"></span>%
+            </p>   
+          </div>
+          <div class="col-3 wind">
+            <p class="details-name">
+              Wind
+            </p>
+            <a href="https://www.flaticon.com/free-icons/wind" title="wind icons" target="_blank"><img src="images/wind.png" width="35" alt="wind icon" />
+            </a>
+            <p class="details-info">
+              <span id="wind"></span> km/h
+            </p>
+          </div>
+          <div class=" col-3 pressure">
+            <p class="details-name">
+             Pressure
+            </p>
+            <a href="https://www.flaticon.com/free-icons/pressure" title="pressure icons" target="_blank"><img src="images/barometer.png" width="35" alt="pressure barometer icon" />
+            </a>
+            <p class="details-info">
+              <span id="pressure"></span> hPa 
+            </p>      
+          </div>
+          <div class=" col-3 feelsLike">
+            <p class="details-name">
+              Feels Like
+            </p>
+            <a href="https://www.flaticon.com/free-icons/shirt" title="shirt icons" target="_blank"><img src="images/t-shirt.png" width="35" alt="feels like shirt icon" />
+            </a>
+            <p class="details-info">
+              <span id="feels-like"></span>°C 
+            </p>  
         </div>
       </div>
+      </div>
+          <div class="week-forecast-container">
+            <div id="forecast"></div>
+          </div>
+      <div class="logo">
+       <a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons" target="_blank"><img src="images/rainbow.png" class="logo-image"/></a>pastel weather
+      </div>  
+      <footer>
+        <a href="https://github.com/breandabarnett/Weather-App-Project" target="_blank"> Open-source code</a>
+        by <a href="https://breanda.carrd.co/" target="_blank">Breanda Barnett</a>
+      </footer>
+      <br>
+      </div>
+      </div>
     </div>
-        <div class="week-forecast-container">
-          <div id="forecast"></div>
-        </div>
-    <div class="logo">
-      <a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons" target="_blank"><img src="images/rainbow.png" class="logo-image"/></a>pastel weather
-    </div>  
-    <footer>
-      <a href="https://github.com/breandabarnett/Weather-App-Project" target="_blank"> Open-source code</a>
-       by <a href="https://breanda.carrd.co/" target="_blank">Breanda Barnett</a>
-    </footer>
-    <br>
-  </div>
-  </div>
-  </div>
     <script src="src/index.js"></script>
   </body>
 </html>

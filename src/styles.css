@@ -56,7 +56,7 @@ a:hover {
 
 .week-forecast-container {
   border: 1px solid none;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 25px;
   width: 560px;
   margin: 10px auto;
@@ -70,7 +70,7 @@ a:hover {
 .feelsLike {
   margin: 5px auto;
   border: 1px solid none;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 10px;
   width: 120px;
   height: 130px;
@@ -116,7 +116,7 @@ a:hover {
   color: rgb(39, 39, 39);
   border-width: 1px;
   border-color: rgb(244, 242, 250);
-  border-radius: 6px;
+  border-radius: 10px;
   border-style: double;
 }
 
@@ -128,18 +128,19 @@ a:hover {
   color: #fff;
   border-width: 1px;
   border-color: rgb(153, 116, 240);
-  border-radius: 6px;
+  border-radius: 10px;
   border-style: double;
 }
 
 .current-button {
   height: 45px;
+  width: 50px;
   text-align: center;
   background-color: rgb(166, 200, 250);
   color: #fff;
   border-width: 1px;
   border-color: rgb(166, 200, 250);
-  border-radius: 6px;
+  border-radius: 10px;
   border-style: double;
 }
 
