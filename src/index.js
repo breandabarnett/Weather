@@ -136,13 +136,15 @@ function showForecast(response) {
         ` 
         <div class="col 2">
         <div class="days">${formatDay(forecastDay.dt)}
+        <p>
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="45"
+          width="48"
         />
+        </p>
         </div>
         <div class="week-temps">
           <span class="high-temp"> ${Math.round(forecastDay.temp.max)}° </span>/
