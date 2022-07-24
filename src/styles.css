@@ -24,6 +24,7 @@ li {
 a {
   text-decoration: none;
   color: rgb(53, 56, 61);
+  font-weight: 600;
 }
 
 a:hover {
@@ -93,10 +94,10 @@ a:hover {
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 500;
   font-family: "Courier New", Courier, monospace;
-  letter-spacing: -2.5px;
+  letter-spacing: -3px;
   margin: 100px auto 10px auto;
   padding: 5px;
   text-align: center;
@@ -105,8 +106,8 @@ a:hover {
 }
 
 .logo-image {
-  width: 40px;
-  margin: 18px 5px 0 0;
+  width: 45px;
+  margin: 20px 5px 0 0;
 }
 
 .enter-city {
@@ -134,7 +135,7 @@ a:hover {
 
 .current-button {
   height: 45px;
-  width: 50px;
+  width: 55px;
   text-align: center;
   background-color: rgb(166, 200, 250);
   color: #fff;
