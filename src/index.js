@@ -39,10 +39,8 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "fd723d0878943be9e88ff512b0c0f747";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(showForecast);
 }
 
@@ -72,7 +70,6 @@ function showWeatherCondition(response) {
   icon.setAttribute("alt", response.data.weather[0].main);
 
   getForecast(response.data.coord);
-  console.log(response.data);
 }
 
 function searchCity(city) {
