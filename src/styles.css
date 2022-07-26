@@ -3,12 +3,13 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgb(191, 166, 250);
   color: rgb(53, 56, 61);
+  min-height: 100vh;
 }
 
 footer {
   font-size: 18px;
   text-align: center;
-  margin: 10px auto;
+  margin: 10px auto 70px auto;
 }
 
 ul {
@@ -37,22 +38,26 @@ a:hover {
   padding: 0;
 }
 
-.search-form {
+.search-container {
   text-align: center;
-  margin: 40px auto;
-  width: 560px;
+  margin: 100px auto 20px auto;
+  width: 580px;
 }
 
 .current-weather-container {
-  padding: 10px;
-  width: 600px;
-  margin: 5px auto 70px auto;
+  border: 1px solid none;
+  border-radius: 30px;
+  padding: 25px;
+  width: 560px;
+  margin: 10px auto;
+  background-color: rgba(250, 250, 250, 0.4);
+  box-shadow: 5px 5px 5px rgba(165, 130, 248, 0.4);
 }
 
 .details-container {
   padding: 5px;
   width: 560px;
-  margin: 30px auto 10px auto;
+  margin: 10px auto;
 }
 
 .week-forecast-container {
@@ -71,7 +76,7 @@ a:hover {
 .feelsLike {
   margin: 5px auto;
   border: 1px solid none;
-  border-radius: 30px;
+  border-radius: 25px;
   padding: 10px;
   width: 120px;
   height: 130px;
@@ -150,11 +155,13 @@ a:hover {
   text-align: center;
   font-weight: 600;
   font-size: 25px;
+  letter-spacing: 0.5px;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .small-icons {
   text-align: center;
+  margin: 5px auto;
 }
 
 .week-temps {
@@ -173,58 +180,59 @@ a:hover {
 }
 
 .current-temp {
-  font-size: 120px;
+  font-size: 60px;
   font-weight: 400;
   color: #fff;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .current-city {
-  font-size: 75px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  margin-bottom: 5px;
   color: #fff;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
 }
 
 .current-description {
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 1px;
   color: #fff;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
+  text-align: left;
 }
 
 .current-time {
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 1px;
   text-align: center;
   color: #fff;
   text-shadow: 1px 2px 3px rgba(99, 99, 99, 0.8);
+  text-align: left;
 }
 
 .main-temperature {
-  text-align: center;
+  text-align: left;
 }
 
 .main-city {
-  text-align: center;
+  text-align: left;
 }
 
 .weather-icon {
-  width: 70px;
-  margin-top: 0px;
+  margin-top: 20px;
+  width: 180px;
 }
 
-.icon-description {
+.icon {
   text-align: center;
 }
 
 .units {
   position: relative;
-  top: -62px;
+  top: -28px;
   left: -3px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin-left: 8px;
   color: #fff;

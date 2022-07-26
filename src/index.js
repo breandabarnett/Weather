@@ -62,7 +62,7 @@ function showWeatherCondition(response) {
     response.data.main.feels_like
   );
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].description;
+    response.data.weather[0].main;
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
@@ -136,13 +136,13 @@ function showForecast(response) {
         ` 
         <div class="col 2">
         <div class="days">${formatDay(forecastDay.dt)}
-        <p>
+        <p class="small-icons">
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="48"
+          width="50"
         />
         </p>
         </div>
