@@ -142,13 +142,13 @@ function showForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="50"
+          width="42"
         />
         </p>
         </div>
         <div class="week-temps">
           <span class="high-temp"> ${Math.round(forecastDay.temp.max)}° </span>
-          <span class="low-temp">/ ${Math.round(forecastDay.temp.min)}° </span>
+          <span class="low-temp">| ${Math.round(forecastDay.temp.min)}° </span>
         </div>
       </div>
       `;

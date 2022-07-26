@@ -19,35 +19,36 @@
   <body>
     <div class="container">
       <div class = "search-container">
+        
         <div class="row">
           <form id="search-form">
           <button
             type="button"
             id="current-location-button"
-            class="col-1 current-button shadow-sm">
+            class="col-1 current-button shadow sm">
             <i class="fi fi-bs-marker"></i>
           </button>  
           <input
             type="text"
             placeholder=" Enter a city name..."
-            class="col-8 enter-city search"
+            class="col-8 enter-city search shadow sm"
             id="city-search-input"
             autocomplete="off"
           />
           <input
             type="submit"
             value="search"
-            class="col-3 search-button shadow-sm"
+            class="col-3 search-button shadow sm"
           />
         </form>
         </div>
       </div>
       <div class="current-weather-container">
         <div class="row">
-          <div class="col-7">
+          <div class="col-8">
             <div class="main-temperature">
               <span class="current-temp" id="temperature"> </span>
-              <span class="units"><a href ="#" id="celcius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+              <span class="units"><a href ="#" id="celcius-link" class="active">°C</a><a href="#" id="fahrenheit-link"> | °F</a></span>
             </div>
             <div class="main-city">
               <h1 class="current-city" id="city"></h1>
@@ -58,7 +59,7 @@
               <span id="weather-description"></span>
             </div>
          </div>
-         <div class="col-5">
+         <div class="col-4">
            <div class="icon">
               <span>
                 <img
@@ -78,7 +79,7 @@
            <p class="details-name">
              Humidity
             </p>
-            <a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons" target="_blank"><img src="images/humidity.png" width="35" alt="humidity icon" />
+            <a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons" target="_blank"><img src="images/humidity.png" width="35" alt="humidity icon" class="detail-icons" />
             </a>
             <p class="details-info">
              <span id="humidity"></span> %
@@ -88,7 +89,7 @@
             <p class="details-name">
               Wind
             </p>
-            <a href="https://www.flaticon.com/free-icons/wind" title="wind icons" target="_blank"><img src="images/wind.png" width="35" alt="wind icon" />
+            <a href="https://www.flaticon.com/free-icons/wind" title="wind icons" target="_blank"><img src="images/wind.png" width="35" alt="wind icon" class="detail-icons" />
             </a>
             <p class="details-info">
               <span id="wind"></span> km/h
@@ -98,7 +99,7 @@
             <p class="details-name">
              Pressure
             </p>
-            <a href="https://www.flaticon.com/free-icons/pressure" title="pressure icons" target="_blank"><img src="images/barometer.png" width="35" alt="pressure barometer icon" />
+            <a href="https://www.flaticon.com/free-icons/pressure" title="pressure icons" target="_blank"><img src="images/barometer.png" width="35" alt="pressure barometer icon" class="detail-icons" />
             </a>
             <p class="details-info">
               <span id="pressure"></span> hPa 
@@ -106,9 +107,9 @@
           </div>
           <div class=" col-3 feelsLike">
             <p class="details-name">
-              Feels Like
+              Feels
             </p>
-            <a href="https://www.flaticon.com/free-icons/shirt" title="shirt icons" target="_blank"><img src="images/t-shirt.png" width="35" alt="feels like shirt icon" />
+            <a href="https://www.flaticon.com/free-icons/shirt" title="shirt icons" target="_blank"><img src="images/t-shirt.png" width="35" alt="feels like shirt icon" class="detail-icons" />
             </a>
             <p class="details-info">
               <span id="feels-like"></span>°C 
@@ -119,12 +120,16 @@
           <div class="week-forecast-container">
             <div id="forecast"></div>
           </div>
-      <div class="logo">
-       <a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons" target="_blank"><img src="images/rainbow.png" class="logo-image"/></a>pastel weather
-      </div>  
       <footer>
-        <a href="https://github.com/breandabarnett/Weather-App-Project" target="_blank"> Open-source code</a>
-        by <a href="https://breanda.carrd.co/" target="_blank">Breanda Barnett</a>
+        <div class="credits">
+          <a href="https://github.com/breandabarnett/Weather-App-Project" target="_blank"> 
+            Open-source code
+              </a> by <a href="https://breanda.carrd.co/" target="_blank">Breanda Barnett
+          </a>
+        </div>
+        <div class="logo">
+          <a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons" target="_blank"><img src="images/rainbow.png" class="logo-image"/></a>pastel weather
+        </div>
       </footer>
       <br>
       </div>
