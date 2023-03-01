@@ -3,6 +3,7 @@ Discover real-time current forecasts of your location and any city! Find weather
 
 <h4>🔗 https://pastel-weather.netlify.app/</h4>
 
+<img src="https://user-images.githubusercontent.com/104718008/222035606-683b30b3-cd58-4573-80da-8285aa0a5b80.gif" alt="live site preview gif"/>
 
 <br />
 
