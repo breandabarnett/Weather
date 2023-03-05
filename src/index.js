@@ -145,7 +145,7 @@ function showForecast(response) {
         </div>
         <div class="week-temps">
           <span class="high-temp"> ${Math.round(forecastDay.temp.max)}° </span>
-          <span class="low-temp">| ${Math.round(forecastDay.temp.min)}° </span>
+          <span class="low-temp"> ${Math.round(forecastDay.temp.min)}° </span>
         </div>
       </div>
       `;
