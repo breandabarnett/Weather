@@ -131,7 +131,7 @@ function showForecast(response) {
       forecastHTML =
         forecastHTML +
         ` 
-        <div class="col 2">
+        <div class="col forecast">
         <div class="days">${formatDay(forecastDay.dt)}
         <p class="small-icons">
         <img

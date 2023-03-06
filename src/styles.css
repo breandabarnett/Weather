@@ -271,3 +271,27 @@ footer {
   max-width: 40px;
   margin: 20px 5px 0 0;
 }
+
+/*SMALLER DEVICE ADJUSTMENTS*/
+@media (max-width: 540px) {
+  .details-container {
+    padding: 10px 20px;
+  }
+
+  .week-forecast-container {
+    padding: 15px 20px;
+  }
+
+  .forecast {
+    padding: 0 8px;
+  }
+
+  .days {
+    font-size: 17px;
+  }
+
+  .week-temps,
+  .details-info {
+    font-size: 14px;
+  }
+}
